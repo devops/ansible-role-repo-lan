@@ -1,0 +1,5 @@
+---
+# tasks file for ansible-role-repo-lan
+
+- name: Configurage CentOS-Base-Lan Repo.
+  template: src=CentOS-Base-Lan.repo.j2 dest=/etc/yum.repos.d/CentOS-Base.repo backup={{ repo_lan_backup }}

@@ -1,0 +1,6 @@
+---
+# defaults file for ansible-role-repo-lan
+
+repo_lan_repos:
+  - { name: "base", baseurl: "http://mirrors.ustc.edu.cn/centos/7/os/x86_64/" }
+repo_lan_backup: yes

@@ -1,0 +1,7 @@
+{% for repo in repo_lan_repos %}
+[{{ repo.name }}]
+name=CentOS-$releasever - {{ repo.name }}
+baseurl={{ repo.baseurl }}
+enabled=1
+gpgcheck=0
+{% endfor %}
